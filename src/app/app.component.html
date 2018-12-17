@@ -1,0 +1,33 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10">
+            <h1>Introduction App</h1>
+            a =>
+            {{a}}
+            <br>
+            b =>
+            {{b}}
+
+            <form>
+                <br>
+                Enter value a:
+                <input type="number" [(ngModel)]="a" name="vala"><br>
+                Enter value b:
+                <input type="number" [(ngModel)]="b" name="valb">
+                <br><br>
+                <button (click)="Sum()">Do The Addtion!</button>
+                <br><br>
+                <div class="alert alert-info">
+                    The sum of {{a}} + {{b}} is {{c}}
+                </div>
+                <div *ngIf='a>b'>
+                    the value of a is greater than b!
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
